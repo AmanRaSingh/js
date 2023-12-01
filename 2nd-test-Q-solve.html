@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // a = 14;
+        // console.log(a)
+        // var a;
+
+        // let a = " "
+        // console.log(a)
+        // console
+
+        // -------------------------7-----------------------
+        // let a = 2;
+        // let b = 2;
+        // if (a == b) {
+        //     document.write(3 * (a+b))
+        // }
+        // else{
+        //     document.write(a+b)
+        // }
+
+        // -------------------------8-----------------------
+
+        // let a = "hello"
+        // b = a.slice(1,4)
+        // document.write(b);
+
+        // a = "hello"
+        // p = 2;
+        // for (let i = 0; i <= a.length - 1; i++) {
+        //     if (i == 1) {
+        //         continue;
+        //     }
+        //     document.write(a[i])
+        // }
+
+        // ------------------9----------------------
+
+        // a = 22
+        // if (a > 0) {
+        //     if (a % 3 == 0 || a % 7 == 0) {
+        //         document.write("its multipul of 3 or 7")
+        //     }
+        //     else {
+        //         document.write("its not")
+        //     }
+        // }
+        // -------------------------10-----------------------------
+
+        // let a = [11, 9, 3, 4, 45, 10, 25]
+        // for (let i = 0; i <= a.length - 1; i++) {
+        //     for (let j = 0; j < a.length; j++) {
+        //         if (a[i] + a[j] == 20 && i != j) {
+        //             document.write(a[j], "<br>")
+        //         }
+        //     }
+        // }
+
+
+        // let a = [1, 2, 3, 4, 5, 4, 3]
+        // let b = [2, 3, 4, 5]
+        // for (i = 0; i < a.length; i++) {
+        //     for (j = 0; j < b.length; j++) {
+        //         if (a[i] == b[j]) {
+        //             document.write(b[j], "<br>")
+        //         }
+        //     }
+        // }
+
+
+        // function prime(a) {
+        //     for (i = 1; i <= a; i++) {
+        //         if (a % i == 0) {
+        //             document.write( i,"it is  prime number")
+        //             // console.log(i)
+        //         }
+        //         else  {
+        //             document.write( "it is not prime number")
+        //         }
+        //     }
+        // } prime(10)
+
+
+        // function primeprint(a) {
+        //     let c = 0;
+        //     for (let i = 1; i <= a; i++) {
+        //         if (a % i == 0) {
+        //             c++
+        //         }
+        //     }
+        //     if (c <= 2) {
+        //         document.write("It's an Prime No.")
+        //     }
+        //     else {
+        //         document.write("It's not an Prime No.")
+        //     }
+        // }
+        // primeprint(3)
+
+
+        // let num = 11;
+        // let temp = 0;
+        // for (let i = 1; i <= num - 1; i++) {
+        //     if (num % i == 0) {
+        //         // temp = temp + 1;
+        //         temp++
+        //     }
+        // }
+        // if (temp > 0) {
+        //     document.write("it's a prime number");
+        // }
+        // else {
+        //     document.write("it's not prime number");
+        // }
+
+
+
+        // let no = 8;
+        // let temp = 0;
+        // for (let i = 2; i <= no - 1; i++) {
+        //     if (no % i == 0) {
+        //         temp++;
+        //     }
+        // }
+        // if (temp > 0) {
+        //     document.write("it's not a prime number")
+        // }
+        // else {
+        //     document.write("it's a prime number")
+        // }
+        // let num = 11
+        // for (let i = 1; i < num; i++) {
+        //     if (num % i == 0) {
+        //         document.write(" not prime")
+
+
+        //     }
+        //     // document.write(" 10 prime")
+        //     else{
+        //         document.write("  prime")
+        //         break;   
+        //     }
+        // }
+
+        // let no = 11;
+        // let temp = 0;
+        // for (let i = 2; i <= no - 1; i++) {
+        //     if (no % i == 0) {
+        //         temp++;
+        //     }
+        // }
+        // if (temp == 0) {
+        //     document.write("it's  a prime number")
+        // }
+        // else {
+        //     document.write("it's  not a prime number")
+        // }
+
+
+        //------------------- 13------------------
+        // for (let i = 0; i <= 5; i++) {
+        //     for (let j = 1; j <= i; j++) {
+        //         document.write("&nbsp&nbsp")
+        //     }
+
+        // } document.write(j)
+
+
+        // for (let j = 0; j <= 4; j++) {
+        //         document.write(j)
+        //     }
+
+        // for (let j = 1; j <= 4; j++) {
+        //     document.write("aman", "<br>")
+        // }
+
+
+        // let sum = 0;
+        // // let num = "143";
+        // let temp = num;
+        // while (temp != 0) {
+        //     // let remainder = temp % 10
+        //     // sum += remainder ** num.length;
+        //     // temp = parseInt(temp / 10);
+        //     for (let i = "101"; i <= "200"; i++) {
+        //         document.write(i)
+        //     }
+
+
+
+        // }
+        // if (sum == num) {
+        //     document.write("it is armstrong ")
+        // }
+        // else {
+        //     document.write("not armstrong ")
+        // }
+
+
+
+        function accen(x) {
+            for (let i = 0; i < x.length; i++) {
+                let max = 0;
+                for (let j = i + 1; j < x.length; j++) {
+                    if (x[i] < x[j]) {
+                        max = x[i]
+                        x[i] = x[j]
+                        x[j] = max
+                    }
+                }
+            }
+            document.write(x, "<br>")
+            document.write(x[x.length - 3])
+        }
+        accen([1,2,3,4,5])
+        function reccen(x) {
+            for (let i = 0; i < x.length; i++) {
+                for (let j = i + 1; j < x.length; j++) {
+                    if (x[i] > x[j]) {
+                        max = x[i]
+                        x[i] = x[j]
+                        x[j] = max
+                    }
+                }
+            }
+            document.write(x, " <br>")
+            document.write(x[x.length - 2])
+        }
+        reccen([1,2,3,4,5])
+        // disending order h
+    </script>
+</body>
+
+</html>

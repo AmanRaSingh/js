@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function accen(x) {
+            for (let i = 1; i <= x.length; i++) {
+                let max = 0;
+                for (let j = i + 1; j <= x.length; j++) {
+                    if (x[i > x[j]]) {
+                        max = x[i]
+                        x[i] = x[j]
+                        x[j] = max
+                    }
+                }
+
+            }
+            document.write(x[x.length - 3])
+        } accen([1, 20, 5, 2, 100, 50, 23])
+    </script>
+</body>
+
+</html>

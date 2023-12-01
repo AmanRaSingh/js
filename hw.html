@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ------------------length-------------------
+        // let x = "hello";
+        // document.write(x.length);
+        // document.write(x.toUpperCase());
+        // document.write(x.toLowerCase());
+        // ---------------------------replace----------------
+        // document.write(x.replace(/h/g,"p"));
+        // document.write(x.replace(/e/g,"A"));
+
+        // let x = "aman";
+        // let y = "singh";
+        // z = x + y;
+        // document.write(z);
+        // let x = "    aman  ";
+        // z = x.trimStart();
+        // document.write(x.length);
+        // document.write(z.length);
+        // -----------------slice-------------
+        // let x = [1, 2, 3, 4, 10, 50, 100]
+        // let y = x.slice(5)
+        // document.write(y);
+        // let x = "hello hey"
+        // let y = x.padStart()
+        // document.write(y);
+        // let x = "poonam"
+        // let y = x.slice(0,2)
+        //  z = x.slice(5)
+        // document.write(y);
+        // document.write(z);
+        // let array = ["hello", 11, 12, 15, false, "aman", null]
+        // document.write(array[5])
+        // let x ;
+        // console.log(x)
+        // console.log(array[3])
+        // console.log(typeof(1));
+        // console.log (array.toString(1))
+        // let x=["ankit","singh","rewa"]
+        // x.push("mp")
+        // document.write(x)
+        // console.log(x)
+        // let x = [1, 2, 3, 100, 500]
+        // x.push(1000)
+        // document.write(x)
+        // console.log(x)
+        // let x = "hello hey"
+        // let y = x.split(",")
+        // document.write(y)
+        // let x = [11,12,15,100,200];
+        // x.pop()
+        // console.log(x)
+        // document.write(x)
+        // ------------------------------join---------------------------
+        // let x =["aman","aaa","sss"]
+        // document.write(x.join("+"))
+        // let x =[1,2,3,10,100]
+        // document.write(x.join("+"))
+        // --------------------------------substr------------------------
+
+        // let x = "poonamsingh";
+        // let y = x.substr(7, 2);
+        // document.write(y);
+        // ----------------------------shift---------------------
+        // let x = [1, 2, 3];
+        // let x = ["aman", "surya", "rewa",];
+        // let y = x.shift();
+        // document.write(x.shift());
+        // document.write(y,"<br>");
+        // document.write(x);
+        // -------------------------------------unshift---------------------------
+        // let x = ["aman", "surya", "rewa",];
+        // let x = [1, 9, 7,100,200,500,1000];
+        // let y = x.unshift("mp");
+        // document.write(x,"<br>");
+        // document.write(x.length);
+        // document.write(y,"<br>");
+        // document.write(y)
+        // -----------------------------------delete---------------------
+        // let x = [1,2,3,4,8];
+        // let x = ["aman", "surya", "rewa",];
+        // let y = delete x[1];
+        // document.write(x);
+        // document.write(x.length);
+        // ---------------------------------concat-----------------
+        // let x = [1, 2, 3, 4];
+        // let y = ["aman","singh"];
+        // z = x.concat(y);
+        // document.write(z);
+        // document.write(typeof(y[1]));
+        // let x = ("aman", "singh", "rewa", "one", "rahul,", "poonam")
+        // let y = (1, 2, 3, 4)
+        // document.write(y.length)
+
+        // ----------------------splice-----------------------
+        // let x = [1, 2, 3, 4, 5, 6, 10, 100]
+        // y = x.splice(2, 3, "h", "s", "rewa")
+        // document.write(x)
+        // document.write(y)
+
+        // let x=["aman","rewa","mp"]
+        // y.splice(2,1,"singh")
+        // document.write(y)
+        // ----------------------------short--------------
+        // let x = ["b", "x", "a"];
+        // let x = [10,2,,4,56,45,18];
+        // x.sort();
+        // document.write(x);
+        // -------------------------------reverse-------------------------
+        // let x = [2,1,11,13,24,5,4,6,9];
+        // x.reverse();
+        // document.write(x);
+        // let a = 18;
+        // b = 50
+        // switch (a) {
+        //     case a:
+        //         document.write("i am happy");
+        //         break;
+        //     case b:
+        //         document.write("i am  not happy");
+        // }
+
+        // let a = parseInt(prompt("enter a number"))
+        // switch (a) {
+        //     case a == 1:
+        //         document.write("sunday");
+        //         break;
+        //     case 2:
+        //         document.write("monday");
+        //         break;
+        //     case 3:
+        //         document.write("tuesday");
+        //         break;
+        //     case 4:
+        //         document.write("wednesday");
+        //         break;
+        //     case 5:
+
+
+
+        //         document.write("thursday");
+        //         break;
+        //     case 6:
+        //         document.write("friday");
+        //         break;
+        //     case 7:
+        //         document.write("saturday");
+        // }
+        // -------------------------------sort-----------------------
+        // let x = [5, 2, 9, 1, 5];
+        // x.sort();
+        // document.write(x);
+        // ------------------------------reverse----------------------
+        // let x = [5, 2, 9, 1, 5];
+        // x.reverse();
+        // document.write(x);
+        // -------------------------------sort-----------------------
+
+        // let x = ["apple", "banana", "cherry", "date"];
+        // x.sort();
+        // document.write(x);
+        // ------------------------------reverse----------------------
+        // let x = ["apple", "banana", "cherry", "date"];
+        // x.reverse();
+        // document.write(x);
+        // ------------------------switch function-------------------------
+        // let a = parseInt(prompt("enter a number"))
+        // switch (a) {
+        //     case a = 1:
+        //         document.write("sunday");
+        //         break;
+        //     case a = 2:
+        //         document.write("monday");
+        //         break;
+        //     case a = 3:
+        //         document.write("tuesday");
+        //         break;
+        //     case a = 4:
+        //         document.write("wednesday");
+
+        //         break;
+        //     case a = 5:
+        //         document.write("thursday");
+        //         break;
+        //     case a = 6:
+        //         document.write("friday");
+        //         break;
+        //     case a = 7:
+        //         document.write("saturday");
+        // }
+
+        let age = parseInt(prompt("enter your age"));
+        switch (true) {
+            case (age >= 18):
+                document.write("eligible for vote");
+                break;
+                
+            case (age <= 18):
+                document.write("eligible for not vote");
+            //     break;
+            // case (age >=25&& age<=30):
+            //     document.write("eligible for sitting");
+            //     break;
+            // default:
+            //     document.write("for voting");
+        }
+        // for (let i = 1; i <= 100; i++)
+        //     if (i % 3 == 0 && i % 5 == 0) {
+        //         document.write("fizzbuzz<br>");
+        //     }
+        //     else if (i % 3 == 0) {
+        //         document.write("fizz<br>");
+        //     }
+        //     else if (i % 5 == 0) {
+        //         document.write("buzz<br>");
+        //     }
+        //     else {
+        //         // document.write(i, "<br>")
+        //     }
+        // let x = [1,2,3,4];
+        // // let x="rewa  is cute"
+        // let y = x.splice(2,1,"h","s");
+        // document.write(y)
+    </script>
+</body>
+
+</html>
