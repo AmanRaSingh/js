@@ -79,11 +79,11 @@
         // function prime(a) {
         //     for (i = 1; i <= a; i++) {
         //         if (a % i == 0) {
-        //             document.write( i,"it is  prime number")
+        //             document.write(i, "it is  prime number")
         //             // console.log(i)
         //         }
-        //         else  {
-        //             document.write( "it is not prime number")
+        //         else {
+        //             document.write("it is not prime number")
         //         }
         //     }
         // } prime(10)
@@ -104,11 +104,11 @@
         //     }
         // }
         // primeprint(3)
-
+        // ---------------prime number--------------------
 
         // let num = 11;
         // let temp = 0;
-        // for (let i = 1; i <= num - 1; i++) {
+        // for (let i = 2; i <= num - 1; i++) {
         //     if (num % i == 0) {
         //         // temp = temp + 1;
         //         temp++
@@ -122,20 +122,6 @@
         // }
 
 
-
-        // let no = 8;
-        // let temp = 0;
-        // for (let i = 2; i <= no - 1; i++) {
-        //     if (no % i == 0) {
-        //         temp++;
-        //     }
-        // }
-        // if (temp > 0) {
-        //     document.write("it's not a prime number")
-        // }
-        // else {
-        //     document.write("it's a prime number")
-        // }
         // let num = 11
         // for (let i = 1; i < num; i++) {
         //     if (num % i == 0) {
@@ -206,36 +192,163 @@
 
 
 
-        function accen(x) {
-            for (let i = 0; i < x.length; i++) {
-                let max = 0;
-                for (let j = i + 1; j < x.length; j++) {
-                    if (x[i] < x[j]) {
-                        max = x[i]
-                        x[i] = x[j]
-                        x[j] = max
+        // function accen(x) {
+        //     for (let i = 0; i < x.length; i++) {
+        //         let max = 0;
+        //         for (let j = i + 1; j < x.length; j++) {
+        //             if (x[i] < x[j]) {
+        //                 max = x[i]
+        //                 x[i] = x[j]
+        //                 x[j] = max
+        //             }
+        //         }
+        //     }
+        //     document.write(x, "<br>")
+        //     document.write(x[x.length - 3])
+        // }
+
+
+        // accen([1,2,3,4,5])
+        // function reccen(x) {
+        //     for (let i = 0; i < x.length; i++) {
+        //         for (let j = i + 1; j < x.length; j++) {
+        //             if (x[i] > x[j]) {
+        //                 max = x[i]
+        //                 x[i] = x[j]
+        //                 x[j] = max
+        //             }
+        //         }
+        //     }
+        //     document.write(x, " <br>")
+        //     document.write(x[x.length - 2])
+        // }
+        // reccen([1,2,3,4,5])
+
+        // for (let i = 1; i <= 5; i++) {
+        //     for (j = 5; j >= i; j--) {
+        //         document.write(j," ")
+        //     }
+        //     document.write("<br>")
+        // }
+
+        //   -----------------------  factorial-------------------------
+
+        // let num = 6;
+        // let a = 1;
+        // for (let i = 1; i <= num; i++) {
+        //     a = a * i
+        // }
+        // document.write(a)
+
+        // -------------------function se armstrong--------------------
+        // let sum = "143";
+        // let num = 0;
+        // let temp = sum
+        // while (temp != 0) {
+        //     remainder = temp % 10
+        //     num += remainder ** sum.length
+        //     temp = parseInt(temp / 10)
+        // }
+        // if (sum == num){
+        //     document.write("it is armstrong")
+        // }
+        // else{
+        //     document.write("it is not armstrong")
+        // }
+
+        // function arm(a) {
+        //     let sum = 0;
+        //     let num = a;
+        //     let temp = num;
+        //     while (temp != 0) {
+        //         remainder = temp % 10;
+        //         sum += remainder ** num.length;
+        //         temp = parseInt(temp / 10);
+        //     }
+        //     if (sum == num) {
+        //         document.write("it is armstrong ")
+        //     }
+        //     else {
+        //         document.write("it is not armstrong ")
+        //     }
+        // } arm("1543")
+
+
+
+        // --------------------sum of prime number-----------------
+
+        // let sum = 0;
+        // for (let i = 2; i <= 20; i++) {
+        //     for (let j = 2; j <= i - 1; j++) {
+        //         temp = 0
+        //         if (i % j == 0) {
+        //             temp++
+        //         }
+        //         if (temp == 0) {
+        //             sum = sum + 1
+        //         }
+        //     }
+        // }
+        // document.write("sum of  prime number", +sum)
+
+        // ---------------------------prime--------------------
+
+        // function prim(a) {
+            for (let i = 1; i <= 10; i++) {
+                for (j = 2; j < i; j++) {
+                    if (i % j == 0) {
+                        break;
                     }
                 }
-            }
-            document.write(x, "<br>")
-            document.write(x[x.length - 3])
-        }
-        accen([1,2,3,4,5])
-        function reccen(x) {
-            for (let i = 0; i < x.length; i++) {
-                for (let j = i + 1; j < x.length; j++) {
-                    if (x[i] > x[j]) {
-                        max = x[i]
-                        x[i] = x[j]
-                        x[j] = max
-                    }
+                if (i == j) {
+                    document.write(i,"<br>");
                 }
             }
-            document.write(x, " <br>")
-            document.write(x[x.length - 2])
-        }
-        reccen([1,2,3,4,5])
-        // disending order h
+        // }
+        // prim(20)
+        // ---------------------sum of prime number---------------------
+        // function prime(x) {
+        //     let b = 0
+        //     for (let i = 1; i <= x; i++) {
+
+        //         for (j = 2; j < i; j++) {
+        //             if (i % j == 0) {
+        //                 break;
+        //             }
+        //         }
+        //         if (i == j) {
+        //             b = b + i
+        //             // document.write(i, "<br>");
+        //         }
+        //     }
+        //     document.write(b, "<br>");
+        // } prime(10)
+
+        // let b = 0
+        // for (let i = 1; i <= 10; i++) {
+                
+        //         for (j = 2; j < i; j++) {
+        //             if (i % j == 0) {
+        //                 break;
+        //             }
+        //         }
+        //         if (i == j) {
+        //             b = b + i
+        //             // document.write(i, "<br>");
+        //         }
+        //     }
+        //     document.write(b, "<br>");
+
+        // let a = 0
+        // for (let i = 1; i <= 10; i++) {
+        //     if (i % 2 == 0) {
+        //         // a = a + i
+        //         document.write(i, "<br>")
+        //         // document.write(a, "<br>")
+        //     }
+
+        // }
+        // document.write(a, "<br>")
     </script>
 </body>
 

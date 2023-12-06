@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ------------------7---------------------
+        // fibonacci series---------
+        // let a = 0; b = 1;
+        // document.write(a, " ", b)
+        // let c;
+        // for (let i = 1; i <= 10; i++) {
+        //     c = a + b
+        //     document.write(" ",c)
+        //     a = b
+        //     b = c
+        // }
+        // -----------------8----------------------
+        // armstrong number---------
+        // let sum = 0;
+        // let num = "370"
+        // let temp = num;
+        // while (temp != 0) {
+        //     remainder = temp % 10;
+        //     sum += remainder ** num.length
+        //     temp = parseInt(temp / 10)
+        // }
+        // if (sum == num) {
+        //     document.write("it is armstrong number")
+        // }
+        // else {
+        //     document.write("it is  not armstrong number")
+        // }
+
+        // ------------9-----------------------
+        // function se armstrong---------------
+        // function arm(a) {
+        //     let sum = 0;
+        //     let num = a;
+        //     let temp = num;
+        //     while (temp != 0) {
+        //         remainder = temp % 10;
+        //         sum += remainder ** num.length;
+        //         temp = parseInt(temp / 10)
+        //     }
+        //     if (sum == num) {
+        //         document.write("it is armstrong")
+        //     }
+        //     else {
+        //         document.write("it is not armstrong")
+        //     }
+        // } arm("1503")
+
+        // ---------------13--------------------
+        // second largest number--------------
+        // let a = [2, 3, 6, 12]
+        // for (let i = 0; i < a.length; i++) {
+        //     let max = 0
+        //     for (let j = i + 1; j < a.length; j++) {
+        //         if (a[i] > a[j]) {
+        //             max = a[i];
+        //             a[i] = a[j];
+        //             a[j] = max
+        //         }
+        //     }
+        // }
+        // document.write(a[a.length - 2])
+
+        // function array(x) {
+        //     for (let i = 0; i < x.length; i++) {
+        //         let sum = [0];
+        //         for (let j = i + 1; j < x.length; j++) {
+        //             if (x[i] > x[j]) {
+        //                 max = x[i];
+        //                 x[i] = x[j];
+        //                 x[j] = max
+        //             }
+        //         }
+        //     }
+        //     document.write(x[x.length - 2]);
+        // }
+        // array([1, 5, 3, 8, 6, 10, 15, 20])
+
+
+        // ------------14-----------------------
+        // armstromg 101---------------
+        // let sum = 0;
+        // for (let i = 101; i < 500; i++) {
+        //     let sum = 0; temp = i; rem = 0;
+        //     while (temp != 0) {
+        //         rem = temp % 10;
+        //         sum += rem * rem * rem
+        //         temp = parseInt(temp / 10);
+        //     }
+        //     if (sum == i) {
+        //         document.write(i, "it is armstrong number")
+        //     }
+        //     // else {
+        //     //     document.write("it is  not armstrong number")
+        //     // }
+        // }
+
+        // -------15-------------------
+        // --------factorial----------------
+        // let num = 5;
+        // a = 1;
+        // for (let i = 1; i <= num; i++) {
+        //     a = a * i
+        // }
+        // document.write(a)
+
+        // -16---------------
+        // check prime number-------------
+        // for (let i = 1; i <= 10; i++) {
+        //     for (j = 2; j < i; j++)
+        //         if (i % j == 0) {
+        //             break;
+        //         }
+        //     if (i == j) {
+        //         document.write(i, "prime <br>")
+        //     }
+        // }
+
+        // -------17--------------------------
+        // print prime number-------------
+        // for (let i = 1; i <= 10; i++) {
+        //     for (j = 2; j < i; j++) {
+        //         if (i % j == 0) {
+        //             break;
+        //         }
+
+        //     }
+        //     if (i == j) {
+        //         document.write(i, "it is prime number <br>")
+        //     }
+        // }
+
+        //   ---18-----------------
+        // ascending order-------------
+
+        // let a = [11, 21, 44, 5, 63, 2, 5,]
+        // for (let i = 0; i < a.length; i++) {
+        //     let max = 0
+        //     for (let j = i + 1; j < a.length; j++) {
+        //         if (a[i] > a[j]) {
+        //             max = a[i]
+        //             a[i] = a[j]
+        //             a[j] = max
+        //         }
+        //     }
+        // }
+        // document.write(a[a.length - 2])
+
+        // ----------------19---------------------
+        let a = [12, 3, 2, 1, 56, 12, 20]
+        for (let i = 0; i < a.length; i++) {
+            let max = 0
+            for (let j = i + 1; j < a.length; j++) {
+                if (a[i] > a[j]) {
+                    max = a[i]
+                    a[j] = a[i]
+                    a[i] = max
+                }
+            }
+        }
+        document.write(a[a.length - 1])
+
+        // ----------20---------------
+        // sum of all even number--------------------
+        // let a = 0
+        // for (let i = 1; i <= 10; i++) {
+
+        //     if (i % 2 == 0) {
+        //         a = a + i
+        //     }
+        // }
+        // document.write(a, "even number <br>")
+
+
+    </script>
+</body>
+
+</html>
