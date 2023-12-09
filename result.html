@@ -9,10 +9,10 @@
 
 <body>
     <script>
-        let hindi =  parseInt(prompt("enter a hindi marks"));
-        let english =  parseInt (prompt("enter a english marks"));
-        let math =  parseInt(prompt("enter a math marks"));
-        let science =  parseInt(prompt("enter a science marks"));
+        let hindi = parseInt(prompt("enter a hindi marks"));
+        let english = parseInt(prompt("enter a english marks"));
+        let math = parseInt(prompt("enter a math marks"));
+        let science = parseInt(prompt("enter a science marks"));
 
         document.write("hindi= ", hindi, "<br>")
         document.write("english=", english, "<br>")
@@ -22,17 +22,13 @@
         total = hindi + english + math + science;
         document.write("total=", total, "<br>")
 
-        let average = 50;
+        let average = total / 4;
         document.write("average=", average, "<br>")
-
         // persentage = total / 400 * 100
-
         // document.write("persentage", persentage, "<br>")
-
         if (average >= 90 && average <= 100) {
             document.write(" grade a")
         }
-
         else if (average >= 60 && average <= 90) {
             document.write(" grade b")
         }
