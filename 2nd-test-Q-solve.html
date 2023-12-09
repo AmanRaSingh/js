@@ -27,6 +27,7 @@
         //     document.write(a+b)
         // }
 
+
         // -------------------------8-----------------------
 
         // let a = "hello"
@@ -132,7 +133,7 @@
         //     // document.write(" 10 prime")
         //     else{
         //         document.write("  prime")
-        //         break;   
+        //         break;
         //     }
         // }
 
@@ -293,19 +294,19 @@
 
         // ---------------------------prime--------------------
 
-        // function prim(a) {
-        // for (let i = 1; i <= 10; i++) {
-        //     for (j = 2; j < i; j++) {
-        //         if (i % j == 0) {
-        //             break;
-        //         }
-        //     }
-        //     if (i == j) {
-        //         document.write(i,"<br>");
-        //     }
-        // }
-        // }
-        // prim(20)
+        function prim(a) {
+            for (let i = 1; i <= a; i++) {
+                for (j = 2; j < i; j++) {
+                    if (i % j == 0) {
+                        break;
+                    }
+                }
+                if (i == j) {
+                    document.write(i, "<br>");
+                }
+            }
+        }
+        prim(20)
         // ---------------------sum of prime number---------------------
         // function prime(x) {
         //     let b = 0
@@ -372,12 +373,12 @@
         //     }
         //     document.write("<br>")
         // }
-        for (let i = 1; i <= 5; i++) {
-            for (let j = 1; j <= i; j++) {
-                document.write(j)
-            }
-            document.write("<br>")
-        }
+        // for (let i = 1; i <= 5; i++) {
+        //     for (let j = 1; j <= i; j++) {
+        //         document.write(j)
+        //     }
+        //     document.write("<br>")
+        // }
     </script>
 </body>
 

@@ -9,23 +9,23 @@
 
 <body>
     <script>
-        let sum = 0;
-        for (let i = 101; i < 200; i++) {
-            let temp = i, rem = 0, sum = 0;
-            while (temp != 0) {
-                rem = temp % 10;
-                sum += rem * rem * rem;
-                temp = parseInt(temp / 10)
-            }
+        // let sum = 0;
+        // for (let i = 101; i < 200; i++) {
+        //     let temp = i, rem = 0, sum = 0;
+        //     while (temp != 0) {
+        //         rem = temp % 10;
+        //         sum += rem * rem * rem;
+        //         temp = parseInt(temp / 10)
+        //     }
 
-            if (sum == i) {
-                document.write(i, "it is armstrong")
-                break;
-            }
-            // else {
-            //     document.write(i, "it is  not armstrong")
-            // }
-        }
+        //     if (sum == i) {
+        //         document.write(i, "it is armstrong")
+        //         break;
+        //     }
+        //     // else {
+        //     //     document.write(i, "it is  not armstrong")
+        //     // }
+        // }
 
         // let a = 0; b = 1;
         // document.write(a, " ", b)
@@ -38,12 +38,13 @@
         //     b = c
         // }
 
-        // let num = 5;
-        // temp = 1
-        // for (let i = 1; i <= num; i++) {
-        //     temp = temp * i
-        // }
-        // document.write(temp)
+        // -----------1 se 5tk ka multiple------------
+        let num = 4;
+        temp = 1
+        for (let i = 1; i <= num; i++) {
+            temp = temp * i
+        }
+        document.write(temp)
     </script>
 </body>
 
