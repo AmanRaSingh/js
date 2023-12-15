@@ -63,9 +63,19 @@
         //      let b=   a.slice(1,)
         // document.write(b)
 
-        let a = "hello hey"
-        b = a.split()
-        document.write(b)
+        // let a = "hello hey"
+        // b = a.split()
+        // document.write(b)
+
+        let a = "hello how are you";
+        let count = 0;
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] == "i" || a[i] == "o" || a[i] == "a" || a[i] == "u" || a[i] == "e") {
+                count = count + 1;
+
+            }
+        }
+        document.write(count + " ");
     </script>
 </body>
 
